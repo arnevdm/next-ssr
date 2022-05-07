@@ -1,17 +1,16 @@
 import Link from 'next/link';
-import Image from '../components/Image';
 
-const About =() => {
-    return (
-        <div style={{fontSize: '20px', color: 'blue'}}>
-            <h1>About</h1>
-            <Link href='/'>
-                <button>Back</button>
-            </Link>
-            <Image />
-            <p> I was a magician once</p>
-        </div>
-    )
+const About = () => {
+  return (
+    <div>
+      <Link href="/">
+        {/*<a  style={{ fontSize: 20 }}>About Page</a>*/}
+        <button  style={{ fontSize: 20 }}>Home Page</button>
+      </Link>
+      <h1>About</h1>
+      <p>I was born in a town called Camelot</p>
+    </div>
+  );
 }
 
 export default About;
